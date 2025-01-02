@@ -15,7 +15,9 @@ let package = Package(
     targets: [
         .target(
             name: "Piano3",
-            dependencies: []
+            resources: [
+                .process("Resources")
+            ]
         ),
         .testTarget(
             name: "Piano3Tests",
