@@ -70,11 +70,11 @@ public class PianoPlayer: ObservableObject {
         }
     }
     
-    func play(note: Note, velocity: UInt8 = 64) {
+    public func play(note: Note, velocity: UInt8 = 64) {
         sampler.startNote(note.rawValue, withVelocity: velocity, onChannel: 0)
     }
     
-    func stop(note: Note) {
+    public func stop(note: Note) {
         sampler.stopNote(note.rawValue, onChannel: 0)
     }
     
